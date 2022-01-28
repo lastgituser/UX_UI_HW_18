@@ -1,0 +1,416 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    background-color: #101820;
+}
+
+.color-primary {
+    color: #101820;
+}
+
+.color-secondary {
+    color: #FFFFFF;
+}
+
+.color-accent {
+    color: #FEE715;
+}
+
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.24rem;
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+h4 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.62rem;
+}
+
+/* Header Styles */
+header {
+    margin: 2vh 5vw;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero {
+    height: min(80vw, 90vh);
+    margin: 0 5vw;
+}
+
+.img-logo {
+    height: 5vh;
+    width: 5vw;
+}
+
+.header-link {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48.6px;
+    text-decoration: none;
+    color: #FEE715;
+}
+
+.name {
+    position: absolute;
+    left: 5vw;
+    top: 10vh;
+    width: auto;
+}
+
+/* Title Styles */
+.firstname {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    color: #FEE715;
+}
+
+.lastname {
+    position: relative;
+    left: 1vw;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    color: #FEE715;
+}
+
+.uxui {
+    position: relative;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 65px;
+    top: -30px;
+    color: #FFFFFF;
+}
+
+.developer {
+    position: relative;
+    left: 1vw;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 30px;
+    top: -30px;
+    color: #FFFFFF;
+}
+
+/* Mockup Styles */
+
+.mockups {
+    position: absolute;
+    right: 5vw;
+    width: 40vw;
+    top: 10vh;
+    text-align: right;
+}
+
+.mockup1 {
+    width: 16vw;
+    height: 32vw;
+}
+
+.mockup2 {
+    width: 14vw;
+    height: 30vw;
+}
+
+.cta {
+    position: absolute;
+    left: 5vw;
+    top: min(40vh, 50vw);
+    background-color: #FEE715;
+    color: #101820;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48.6px;
+}
+
+.degree {
+    position: absolute;
+    top: min(73vh, 74vw);
+    left: 5vw;
+}
+
+.gt-logo {
+    width: 15vw;
+}
+
+.degree-description {
+    color: #FFFFFF;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.experience {
+    position: absolute;
+    top: min(78vh, 75vw);
+    left: 30vw;
+    width: max(20vh, 25vw);
+}
+
+.exp-div {
+    position: relative;
+    display: inline-block;
+    width: max(6vh, 10vw);
+}
+
+.img-casestudy {
+    width: max(4vh, 6vw);
+    filter: invert(1.0);
+}
+
+.img-devexp {
+    width: max(4vh, 6vw);
+    filter: invert(1.0);
+}
+
+.exp-num {
+    display: inline;
+    color: #FFFFFF;
+    top: -10px;
+}
+
+.exp-desc {
+    display: inline-block;
+    position: relative;
+    left: 1vw;
+    color: #FFFFFF;
+}
+
+.whoami {
+    display: block;
+    position: absolute;
+    right: 5vw;
+    top: min(75vh, 71vw);
+    color: #FFFFFF;
+    width: 43vw;
+}
+
+.whoami-desc {
+    position: relative;
+    top: -30px;
+}
+
+.skills-icons {
+    display: block;
+    position: absolute;
+    top: min(78vh, 76vw);
+    right: 5vw;
+}
+
+.skill-icon {
+    filter: invert(1.0);
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
+    margin: 0vw 1vw;
+}
+
+.belowthefold {
+    margin: 0 5vw;
+}
+
+.heading-casestudies {
+    color: #FFFFFF;
+}
+
+.case-study {
+    display: inline-block;
+    width: 90vw;
+    margin-top: 1vw;
+}
+
+.case-study-img {
+    display: inline-block;
+    width: 43vw;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+.case-study-text {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 4vw 8vw;
+    width: 28vw;
+}
+
+.case-study-title {
+    color: #FEE715;
+}
+
+.case-study-desc {
+    color: #FFFFFF;
+}
+
+.heading-skills {
+    color: #FFFFFF;
+}
+
+.skills-img {
+    position: relative;
+    display: inline-block;
+    width: 6vw;
+    top: 2vw;
+}
+
+.skills-subsection {
+    display: inline-block;
+    width: 24vw;
+    margin: 0 1vw;
+    color: #FFFFFF;
+    vertical-align: top;
+}
+
+.skills-subsection-title {
+    margin: 0;
+    height: 40px;
+    vertical-align: top;
+}
+
+.letsconnect {
+    vertical-align: middle;
+    margin-top: 5vw;
+    height: 15vw;
+}
+
+.heading-letsconnect {
+    color: #FFFFFF;
+    float: left;
+}
+
+.letsconnect-link {
+    float: right;
+    margin-top: 4vw;
+    margin-left: 2vw;
+}
+
+.letsconnect-img {
+    height: 2vw;
+    width: 2vw;
+}
+
+.letsconnect-title {
+    margin: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#img-github {
+    filter: invert(1.0);
+}
+
+footer {
+    background-color: #FFFFFF;
+    height: 50vw;
+}
+
+.footer-links {
+    display: block;
+    height: 44vw;
+    width: 100vw;
+}
+
+#social {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    left: 5vw;
+    top: 5vw;
+}
+
+#contact {
+    display: inline-block;
+    position: relative;
+    left: 15vw;
+    top: 5vw;
+    vertical-align: top;
+}
+
+#credits {
+    display: inline-block;
+    position: relative;
+    left: 25vw;
+    top: 5vw;
+    vertical-align: top;
+}
+
+.footer-heading {
+    color: #101820;
+    margin: 0;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #101820;
+}
+
+.footer-link-text {
+    margin: 0;
+}
+
+.footer-email {
+    display: block;
+    position: relative;
+    left: 5vw;
+}
+
+.footer-social {
+    display: inline-block;
+    position: relative;
+    left: 30vw;
+    top: -5vw;
+}
+
+.footer-copyright {
+    display: inline-block;
+    position: relative;
+    bottom: 5vw;
+    left: 40vw;
+}
+
+.footer-social-link {
+    display: inline-block;
+    margin: 0 2vw;
+    height: 3vw;
+    text-decoration: none;
+}
+
+.footer-social-img {
+    height: 3vw;
+    width: 3vw;
+}
