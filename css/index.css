@@ -299,7 +299,7 @@ header {
 }
 
 .belowthefold {
-    margin: 0 4rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -309,24 +309,20 @@ header {
 }
 
 .case-study {
-    display: inline-block;
-    width: 90vw;
-    margin-top: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 5rem 0;
 }
 
 .case-study-img {
-    display: inline-block;
-    width: 43vw;
-    border-radius: 20px;
-    vertical-align: middle;
+    width: 40vw;
+    border-radius: 2rem;
 }
 
 .case-study-text {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    margin: 4vw 8vw;
-    width: 28vw;
+    max-width: 20rem;
 }
 
 .case-study-title {
@@ -341,47 +337,58 @@ header {
     color: #FFFFFF;
 }
 
-.skills-img {
-    position: relative;
-    display: inline-block;
-    width: 6vw;
-    top: 2vw;
+.list-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    align-items: flex-start;
+    justify-items: center;
+    color: #FFFFFF;
+    margin: 2rem 0;
 }
 
 .skills-subsection {
-    display: inline-block;
-    width: 24vw;
-    margin: 0 1vw;
-    color: #FFFFFF;
-    vertical-align: top;
+    max-width: 20rem;
 }
 
-.skills-subsection-title {
-    margin: 0;
-    height: 40px;
-    vertical-align: top;
+.skills-img {
+    width: 20vw;
+    max-width: 20rem;
+    align-self: center;
+    justify-self: center;
 }
 
 .letsconnect {
-    vertical-align: middle;
-    margin-top: 5vw;
-    height: 15vw;
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .heading-letsconnect {
     color: #FFFFFF;
-    float: left;
+    width: auto;
 }
 
 .letsconnect-link {
-    float: right;
-    margin-top: 4vw;
-    margin-left: 2vw;
+    margin: 1rem;
+}
+
+.letsconnect-links {
+    width: 80vw;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .letsconnect-img {
-    height: 2vw;
-    width: 2vw;
+    height: 2rem;
+    width: 2rem;
 }
 
 .letsconnect-title {
@@ -395,38 +402,28 @@ header {
 }
 
 footer {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
     background-color: #FFFFFF;
-    height: 50vw;
+    height: 40rem;
+    width: auto;
 }
 
 .footer-links {
-    display: block;
-    height: 44vw;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: auto;
+    align-content: center;
+    margin: 2rem 4rem;
 }
 
 #social {
-    display: inline-block;
-    position: relative;
-    vertical-align: top;
-    left: 5vw;
-    top: 5vw;
 }
 
 #contact {
-    display: inline-block;
-    position: relative;
-    left: 15vw;
-    top: 5vw;
-    vertical-align: top;
 }
 
 #credits {
-    display: inline-block;
-    position: relative;
-    left: 25vw;
-    top: 5vw;
-    vertical-align: top;
 }
 
 .footer-heading {
@@ -476,10 +473,11 @@ footer {
 }
 
 /* Tablet View */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
     .hero {
+        margin: 0 auto;
         display: grid;
-        grid-template-rows: 15rem calc(100vh - 15rem - 15rem - 5rem) 15rem 15rem 15rem;
+        grid-template-rows: 12rem calc(100vh - 12rem - 12rem - 5rem) 12rem 15rem 15rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "nameprof nameprof"
                              "mockups mockups"
@@ -505,13 +503,13 @@ footer {
     }
     .mockup1 {
         width: auto;
-        height: calc(100vh - 15rem - 10rem - 5rem - 2rem);
+        height: calc(100vh - 12rem - 12rem - 5rem - 2rem);
         justify-self: flex-end;
         align-self: center;
     }
     .mockup2 {
         width: auto;
-        height: calc(100vh - 15rem - 10rem - 5rem - 2rem);
+        height: calc(100vh - 12rem - 12rem - 5rem - 2rem);
         align-self: center;
     }
     .intro {
@@ -519,11 +517,33 @@ footer {
         text-align: center;
         margin: 0 auto;
     }
+    .list-skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .skills-img {
+        width: 40vw;
+    }
+    .case-study {
+        display: flex;
+        flex-direction: column;
+    }
+    .case-study-img {
+        width: 60vw;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    .letsconnect {
+        flex-direction: column;
+        height: 12rem;
+    }
 }
 
 /* Mobile View */
 @media only screen and (max-width: 600px) {
     .hero {
+        margin: 0;
         display: grid;
         grid-template-rows: 20rem calc(100vh - 20rem - 5rem - 8rem) 8rem 25rem 15rem 20rem;
         grid-template-columns: 1fr;
@@ -601,5 +621,23 @@ footer {
         text-align: center;
         max-width: 20rem;
         justify-self: center;
+    }
+    .case-study-img {
+        width: 90vw;
+    }
+    .letsconnect {
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+    .list-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .letsconnect-links {
+        justify-content: flex-start;
+    }
+    .reverse {
+        flex-direction: column-reverse;
     }
 }
