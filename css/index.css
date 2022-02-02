@@ -4,9 +4,7 @@ html {
 
 body {
     background-color: #101820;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    overflow: scroll;
 }
 
 .color-primary {
@@ -69,7 +67,7 @@ header {
     display: grid;
     width: calc(100vw - 8rem);
     grid-column-gap: 1rem;
-    grid-template-rows: 12rem calc(100vh - 12rem - 12rem - 5rem) 12rem;
+    grid-template-rows: 15rem calc(100vh - 15rem - 12rem - 5rem) 12rem;
     grid-template-columns: 2fr 2fr 1fr 2fr;
     grid-template-areas: "nameprof nameprof mockups mockups"
                          "cta cta mockups mockups"
@@ -81,6 +79,12 @@ header {
     width: 4rem;
 }
 
+.header-links {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .header-link {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 700;
@@ -90,11 +94,28 @@ header {
     color: #FEE715;
 }
 
+.hamburger-link {
+    text-decoration: none;
+    color: #101820;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.hamburger-menu-input {
+    display: none;
+}
+
+.hamburger-links {
+    display: none;
+}
+
 .intro {
     grid-area: nameprof;
     width: auto;
     height: auto;
-    align-self: start;
+    align-self: center;
 }
 
 /* Title Styles */
@@ -278,8 +299,7 @@ header {
 }
 
 .belowthefold {
-    margin: 0 5rem;
-    width: calc(100vw - 10rem);
+    margin: 0 4rem;
     display: flex;
     flex-direction: column;
 }
@@ -458,10 +478,8 @@ footer {
 /* Tablet View */
 @media only screen and (max-width: 1000px) {
     .hero {
-        margin: 0 2rem;
-        width: calc(100vw - 4rem);
         display: grid;
-        grid-template-rows: 10rem calc(100vh - 10rem - 10rem - 5rem) 10rem 15rem 15rem;
+        grid-template-rows: 15rem calc(100vh - 15rem - 15rem - 5rem) 15rem 15rem 15rem;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "nameprof nameprof"
                              "mockups mockups"
@@ -487,13 +505,13 @@ footer {
     }
     .mockup1 {
         width: auto;
-        height: calc(100vh - 10rem - 15rem - 10rem);
+        height: calc(100vh - 15rem - 10rem - 5rem - 2rem);
         justify-self: flex-end;
         align-self: center;
     }
     .mockup2 {
         width: auto;
-        height: calc(100vh - 10rem - 15rem - 10rem);
+        height: calc(100vh - 15rem - 10rem - 5rem - 2rem);
         align-self: center;
     }
     .intro {
@@ -507,7 +525,7 @@ footer {
 @media only screen and (max-width: 600px) {
     .hero {
         display: grid;
-        grid-template-rows: 18rem calc(100vh - 18rem - 5rem - 10rem) 10rem 25rem 15rem 15rem;
+        grid-template-rows: 20rem calc(100vh - 20rem - 5rem - 8rem) 8rem 25rem 15rem 20rem;
         grid-template-columns: 1fr;
         grid-template-areas: 
                              "nameprof"
@@ -527,16 +545,56 @@ footer {
                              "wai-title"
                              "wai-description"
     }
+    .hamburger-menu {
+        display: block;
+        background: #FEE715;
+        height: 3rem;
+        width: 3rem;
+        mask-image: url(../images/icons/Hamburger_icon.svg);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        -webkit-mask-image: url(../images/icons/Hamburger_icon.svg);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: contain;
+    }
+    .header-links {
+        display: none;
+    }
+    .hamburger-menu-input:checked + header .hamburger-links + .img-logo + .header-links + .hamburger-menu {
+        mask-image: url(../images/icons/x.svg);
+        -webkit-mask-image: url(../images/icons/x.svg);
+        mask-size: contain;
+        -webkit-mask-size: contain;
+    }
+    .hamburger-menu-input:checked + header .hamburger-links {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        right: 4rem;
+        top: 10rem;
+        height: auto;
+        width: calc(100vw - 8rem);
+        background-color: #FFFFFF;
+    }
+    .hamburger-menu-input:checked + header .hamburger-links + .img-logo {
+        opacity: 0;
+    }
+    .hamburger-menu-input:checked + header + .hero, .hamburger-menu-input:checked + header + .hero + .belowthefold, .hamburger-menu-input:checked + header + .hero + .belowthefold + footer {
+        display: none;
+    }
     .skills-icons {
         grid-gap: 2rem;
     }
     .mockup1 {
         width: auto;
-        height: calc(100vh - 10rem - 15rem - 10rem);
+        height: calc(100vh - 20rem - 5rem - 8rem - 5rem);
     }
     .mockup2 {
         width: auto;
-        height: calc(100vh - 10rem - 15rem - 10rem);
+        height: calc(100vh - 20rem - 5rem - 8rem - 5rem);
     }
     .intro {
         align-self: center;
