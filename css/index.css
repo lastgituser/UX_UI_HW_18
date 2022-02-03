@@ -306,6 +306,7 @@ header {
 
 .heading-casestudies {
     color: #FFFFFF;
+    margin: 0 1rem;
 }
 
 .case-study {
@@ -336,6 +337,7 @@ header {
 
 .heading-skills {
     color: #FFFFFF;
+    margin: 0 1rem;
 }
 
 .list-skills {
@@ -362,8 +364,7 @@ header {
 }
 
 .letsconnect {
-    margin: 5rem;
-    height: auto;
+    margin: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -372,7 +373,7 @@ header {
 
 .heading-letsconnect {
     color: #FFFFFF;
-    width: auto;
+    margin: 0 1rem;
 }
 
 .letsconnect-link {
@@ -405,10 +406,8 @@ header {
 
 footer {
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: auto auto;
     background-color: #FFFFFF;
-    height: 40rem;
-    width: auto;
 }
 
 .footer-links {
@@ -419,59 +418,49 @@ footer {
     margin: 2rem 4rem;
 }
 
-#social {
-}
-
-#contact {
-}
-
-#credits {
-}
-
 .footer-heading {
     color: #101820;
     margin: 0;
 }
 
+.footer-linkgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .footer-link {
     text-decoration: none;
     color: #101820;
+    margin: 1rem 0;
 }
 
 .footer-link-text {
     margin: 0;
+    line-height: 2rem;
 }
 
-.footer-email {
-    display: block;
-    position: relative;
-    left: 5vw;
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 2rem;
+    justify-content: space-between;
+    width: auto;
 }
 
 .footer-social {
-    display: inline-block;
-    position: relative;
-    left: 30vw;
-    top: -5vw;
-}
-
-.footer-copyright {
-    display: inline-block;
-    position: relative;
-    bottom: 5vw;
-    left: 40vw;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer-social-link {
-    display: inline-block;
-    margin: 0 2vw;
-    height: 3vw;
+    margin: 0 1rem;
     text-decoration: none;
 }
 
 .footer-social-img {
-    height: 3vw;
-    width: 3vw;
+    height: 2rem;
+    width: 2rem;
 }
 
 /* Tablet View */
@@ -522,6 +511,7 @@ footer {
     .list-skills {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        margin: 1rem;
     }
     .skills-img {
         width: 40vw;
@@ -538,7 +528,19 @@ footer {
     }
     .letsconnect {
         flex-direction: column;
-        height: 12rem;
+    }
+    .footer-links {
+        margin: 2rem;
+    }
+    #footer-link-email-text {
+        word-wrap: break-word;
+        width: 15rem;
+        line-height: 2rem;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
     }
 }
 
@@ -604,7 +606,6 @@ footer {
     .hamburger-menu-input:checked + header .hamburger-links + .img-logo {
         opacity: 0;
     }
-    /*.hamburger-menu-input:checked + header + .hero, .hamburger-menu-input:checked + header + .hero + .belowthefold, .hamburger-menu-input:checked + header + .hero + .belowthefold + footer {*/
     .hamburger-menu-input:checked + header + .hero, .hamburger-menu-input:checked + header + .hero + .belowthefold, .hamburger-menu-input:checked + header + .hero + .belowthefold + footer {
         display: none;
     }
@@ -637,10 +638,20 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    .letsconnect {
+        margin: 2rem;
+    }
     .letsconnect-links {
         justify-content: flex-start;
     }
     .reverse {
         flex-direction: column-reverse;
+    }
+    .footer-links {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        align-items: flex-start;
+        grid-row-gap: 4rem;
+        margin: 2rem auto;
     }
 }
