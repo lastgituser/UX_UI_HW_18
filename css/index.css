@@ -327,6 +327,7 @@ header {
 
 .case-study-title {
     color: #FEE715;
+    text-decoration: none;
 }
 
 .case-study-desc {
@@ -346,7 +347,7 @@ header {
     align-items: flex-start;
     justify-items: center;
     color: #FFFFFF;
-    margin: 2rem 0;
+    margin: 2rem 4rem;
 }
 
 .skills-subsection {
@@ -362,6 +363,7 @@ header {
 
 .letsconnect {
     margin: 5rem;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -602,6 +604,7 @@ footer {
     .hamburger-menu-input:checked + header .hamburger-links + .img-logo {
         opacity: 0;
     }
+    /*.hamburger-menu-input:checked + header + .hero, .hamburger-menu-input:checked + header + .hero + .belowthefold, .hamburger-menu-input:checked + header + .hero + .belowthefold + footer {*/
     .hamburger-menu-input:checked + header + .hero, .hamburger-menu-input:checked + header + .hero + .belowthefold, .hamburger-menu-input:checked + header + .hero + .belowthefold + footer {
         display: none;
     }
