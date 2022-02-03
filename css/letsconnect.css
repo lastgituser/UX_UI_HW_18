@@ -1,0 +1,64 @@
+
+.letsconnect {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-letsconnect {
+    color: #FFFFFF;
+    margin: 2rem 4rem;
+}
+
+.letsconnect-link {
+    margin: 1rem;
+}
+
+.letsconnect-links {
+    width: 80vw;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.letsconnect-img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.letsconnect-title {
+    margin: 0;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#img-github {
+    filter: invert(1.0);
+}
+
+@media only screen and (max-width: 1100px) {
+    .letsconnect {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .letsconnect {
+        flex-direction: column;
+        margin: 5rem 0;
+        align-items: center;
+    }
+    .heading-letsconnect {
+        margin: 2rem 0;
+        text-align: center;
+    }
+    .letsconnect-links {
+        justify-content: flex-start;
+    }
+}
