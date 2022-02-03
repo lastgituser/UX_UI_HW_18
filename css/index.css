@@ -299,14 +299,14 @@ header {
 }
 
 .belowthefold {
-    margin: 0 auto;
+    margin: 4rem auto;
     display: flex;
     flex-direction: column;
 }
 
 .heading-casestudies {
     color: #FFFFFF;
-    margin: 0 1rem;
+    margin: 0 8rem;
 }
 
 .case-study {
@@ -314,11 +314,12 @@ header {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    margin: 5rem 0;
+    margin: 4rem 8rem;
+    text-decoration: none;
 }
 
 .case-study-img {
-    width: 40vw;
+    width: calc(50vw - 8rem);
     border-radius: 2rem;
 }
 
@@ -328,7 +329,6 @@ header {
 
 .case-study-title {
     color: #FEE715;
-    text-decoration: none;
 }
 
 .case-study-desc {
@@ -337,7 +337,7 @@ header {
 
 .heading-skills {
     color: #FFFFFF;
-    margin: 0 1rem;
+    margin: 0 8rem;
 }
 
 .list-skills {
@@ -364,7 +364,7 @@ header {
 }
 
 .letsconnect {
-    margin: 2rem;
+    margin: 2rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -373,7 +373,7 @@ header {
 
 .heading-letsconnect {
     color: #FFFFFF;
-    margin: 0 1rem;
+    margin: 2rem 4rem;
 }
 
 .letsconnect-link {
@@ -519,15 +519,19 @@ footer {
     .case-study {
         display: flex;
         flex-direction: column;
+        width: auto;
+        margin: 4rem 0;
     }
     .case-study-img {
-        width: 60vw;
+        width: 80vw;
     }
     .reverse {
         flex-direction: column-reverse;
     }
     .letsconnect {
+        margin: 0;
         flex-direction: column;
+        align-items: center;
     }
     .footer-links {
         margin: 2rem;
@@ -542,14 +546,22 @@ footer {
         align-items: center;
         margin: 1rem 0;
     }
+    .heading-casestudies {
+        margin: 0;
+        text-align: center;
+    }
+    .heading-skills {
+        margin: 0;
+        text-align: center;
+    }
 }
 
 /* Mobile View */
 @media only screen and (max-width: 600px) {
     .hero {
-        margin: 0;
+        margin: 0 auto;
         display: grid;
-        grid-template-rows: 20rem calc(100vh - 20rem - 5rem - 8rem) 8rem 25rem 15rem 20rem;
+        grid-template-rows: 18rem calc(100vh - 18rem - 5rem - 10rem) 10rem 15rem 15rem 20rem;
         grid-template-columns: 1fr;
         grid-template-areas: 
                              "nameprof"
@@ -632,14 +644,16 @@ footer {
     .letsconnect {
         flex-direction: column;
         margin: 5rem 0;
+        align-items: center;
+    }
+    .heading-letsconnect {
+        margin: 2rem 0;
+        text-align: center;
     }
     .list-skills {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .letsconnect {
-        margin: 2rem;
     }
     .letsconnect-links {
         justify-content: flex-start;
@@ -653,5 +667,8 @@ footer {
         align-items: flex-start;
         grid-row-gap: 4rem;
         margin: 2rem auto;
+    }
+    .skills-img {
+        width: 90vw;
     }
 }
