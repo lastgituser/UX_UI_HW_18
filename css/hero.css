@@ -1,14 +1,25 @@
 
+.hero-background-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    filter: saturate(0.1) brightness(0.5);
+    height: 100vh;
+    width: 100vw;
+}
+
 .hero {
     margin: 0 4rem;
     display: grid;
     width: calc(100vw - 8rem);
     grid-column-gap: 1rem;
     grid-template-rows: 15rem calc(100vh - 15rem - 12rem - 5rem) 12rem;
-    grid-template-columns: 2fr 2fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "nameprof nameprof mockups mockups"
                          "cta cta mockups mockups"
-                         "hero-degree hero-experience whoami whoami";
+                         "hero-creds hero-experience whoami whoami";
 }
 
 .intro {
@@ -54,6 +65,10 @@
 /* Mockup Styles */
 
 .mockups {
+    background-image: url("../images/icons/mockup-background.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     grid-area: mockups;
     display: grid;
     grid-template-rows: 1fr;
@@ -62,6 +77,7 @@
     height: auto;
     align-self: center;
     justify-self: flex-end;
+    padding: 6rem 4rem;
 }
 
 .mockup1 {
@@ -95,22 +111,45 @@
     line-height: 3.24rem;
 }
 
+.creds {
+    grid-area: hero-creds;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 24rem;
+    justify-self: flex-start;
+}
+
 .degree {
-    grid-area: hero-degree;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-self: center;
-    justify-self: flex-start;
     width: auto;
 }
 
+.certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .gt-logo {
-    width: 12rem;
+    width: 11rem;
 }
 
 .degree-description {
+    color: #FFFFFF;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.certificate-description {
     color: #FFFFFF;
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 100;
@@ -163,7 +202,7 @@
 
 .whoami {
     max-width: 30rem;
-    justify-self: flex-start;
+    justify-self: flex-end;
     grid-area: whoami;
     color: #FFFFFF;
     display: grid;
@@ -201,15 +240,19 @@
     .hero {
         margin: 0 auto;
         display: grid;
-        grid-template-rows: 12rem calc(100vh - 12rem - 12rem - 5rem) 12rem 15rem 15rem;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "nameprof nameprof"
-                             "mockups mockups"
-                             "cta cta"
-                             "hero-degree hero-experience"
-                             "whoami whoami";
+        grid-template-rows: 12rem calc(100vh - 12rem - 12rem - 5rem) 12rem 15rem 15rem 15rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: "nameprof"
+                             "mockups"
+                             "cta"
+                             "hero-creds"
+                             "hero-experience"
+                             "whoami";
     }
     .cta {
+        justify-self: center;
+    }
+    .creds {
         justify-self: center;
     }
     .degree {
@@ -253,7 +296,7 @@
                              "nameprof"
                              "mockups"
                              "cta"
-                             "hero-degree"
+                             "hero-creds"
                              "hero-experience"
                              "whoami"
     }
@@ -273,15 +316,19 @@
     .mockup1 {
         width: auto;
         height: calc(100vh - 20rem - 5rem - 8rem - 5rem);
+        max-width: 8rem;
+        max-height: 16rem;
     }
     .mockup2 {
         width: auto;
         height: calc(100vh - 20rem - 5rem - 8rem - 5rem);
+        max-width: 8rem;
+        max-height: 16rem;
     }
     .intro {
         align-self: center;
         text-align: center;
-        max-width: 20rem;
+        max-width: 15rem;
         justify-self: center;
     }
 }

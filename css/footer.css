@@ -3,6 +3,7 @@ footer {
     display: grid;
     grid-template-rows: auto auto;
     background-color: #FFFFFF;
+    width: 100vw;
 }
 
 .footer-links {
@@ -10,7 +11,7 @@ footer {
     grid-template-columns: 1fr 2fr 1fr;
     width: auto;
     align-content: center;
-    margin: 2rem 4rem;
+    margin: 4rem 4rem;
 }
 
 .footer-heading {
@@ -38,7 +39,7 @@ footer {
 .footer-bottom {
     display: flex;
     flex-direction: row;
-    margin: 4rem 2rem;
+    margin: 0rem 2rem;
     justify-content: space-between;
     width: auto;
 }
@@ -46,6 +47,7 @@ footer {
 .footer-social {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .footer-social-link {

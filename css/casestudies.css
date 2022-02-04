@@ -37,7 +37,6 @@
     }
     .case-study {
         display: flex;
-        flex-direction: column;
         width: auto;
         margin: 4rem 0;
     }

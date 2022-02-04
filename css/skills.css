@@ -45,7 +45,6 @@
 @media only screen and (max-width: 600px) {
     .list-skills {
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
     .skills-img {
