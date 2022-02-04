@@ -14,16 +14,29 @@
 }
 
 .case-study-img {
-    width: calc(50vw - 8rem);
+    width: calc(48vw - 8rem);
     border-radius: 2rem;
 }
 
 .case-study-text {
     max-width: 20rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-button {
+    padding: 0 2rem;
+    background-color: #FEE715;
+    color: #101820;
+    border-radius: 1rem;
+    margin-right: auto;
+    margin-top: 2rem;
 }
 
 .case-study-title {
-    color: #FEE715;
+    color: #FFFFFF;
+    margin: 0;
 }
 
 .case-study-desc {
@@ -37,11 +50,11 @@
     }
     .case-study {
         display: flex;
-        width: auto;
+        align-items: center;
         margin: 4rem 0;
     }
     .case-study-img {
-        width: 80vw;
+        width: 60vw;
     }
 }
 @media only screen and (max-width: 600px) {
