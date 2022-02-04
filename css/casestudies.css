@@ -25,6 +25,10 @@
     flex-direction: column;
 }
 
+.case-study-skills {
+    color: #FFFFFF;
+}
+
 .case-study-button {
     padding: 0 2rem;
     background-color: #FEE715;
