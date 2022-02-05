@@ -1,7 +1,7 @@
 
 .heading-casestudies {
     color: #FFFFFF;
-    margin: 0 8rem;
+    margin: 0 4rem;
 }
 
 .case-study {
@@ -9,12 +9,13 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
-    margin: 4rem 8rem;
+    margin: 4rem 0rem;
     text-decoration: none;
 }
 
 .case-study-img {
     width: calc(48vw - 8rem);
+    max-width: 40rem;
     border-radius: 2rem;
 }
 

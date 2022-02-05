@@ -11,7 +11,8 @@
 }
 
 .hero {
-    margin: 0 8rem;
+    max-width: 100rem;
+    margin: 0 auto;
     display: grid;
     width: calc(100vw - 16rem);
     grid-column-gap: 1rem;
@@ -83,7 +84,7 @@
 .mockup1 {
     width: auto;
     height: calc(100vh - 15rem - 15rem - 5rem);
-    max-height: 30rem;
+    max-height: 26rem;
     grid-area: mockup1;
     justify-self: flex-end;
     align-self: flex-start;
@@ -92,7 +93,7 @@
 .mockup2 {
     width: auto;
     height: calc(100vh - 15rem - 15rem - 5rem);
-    max-height: 30rem;
+    max-height: 26rem;
     grid-area: mockup2;
 }
 

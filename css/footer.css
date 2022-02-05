@@ -4,14 +4,16 @@ footer {
     grid-template-rows: auto auto;
     background-color: #FFFFFF;
     width: 100vw;
+    justify-items: center;
 }
 
 .footer-links {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    width: auto;
     align-content: center;
-    margin: 4rem 4rem;
+    margin: 4rem 2rem;
+    max-width: 100rem;
+    justify-items: center;
 }
 
 .footer-heading {
@@ -41,7 +43,7 @@ footer {
     flex-direction: row;
     margin: 0rem 2rem;
     justify-content: space-between;
-    width: auto;
+    max-width: 90rem;
 }
 
 .footer-social {
