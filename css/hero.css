@@ -1,13 +1,31 @@
+:root {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
 
 .hero-background-image {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: -1;
     object-fit: cover;
-    filter: saturate(0.1) brightness(0.5);
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-background-gradient {
+    background: var(--color-primary);
+    background: -webkit-linear-gradient(bottom, #101820, #10182000);
+    background: -moz-linear-gradient(bottom, #101820, #10182000);
+    background: linear-gradient(to top, #101820, #10182000);
+    position: absolute;
+    left: 0;
+    top: 50vh;
+    z-index: -1;
+    height: 50vh;
+    width: 100vw;
 }
 
 .hero {
@@ -35,7 +53,7 @@
     font-weight: 700;
     font-size: 6rem;
     line-height: 6rem;
-    color: #FFFFFF;
+    color: var(--color-secondary);
     margin-right: 2rem;
 }
 
@@ -44,7 +62,7 @@
     font-weight: 700;
     font-size: 4rem;
     line-height: 4rem;
-    color: #FFFFFF;
+    color: var(--color-secondary);
 }
 
 .uxui {
@@ -52,7 +70,7 @@
     font-weight: 100;
     font-size: 3rem;
     line-height: 3rem;
-    color: #FFFFFF;
+    color: var(--color-secondary);
     margin-right: 1rem;
 }
 
@@ -60,7 +78,7 @@
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 100;
     font-size: 2rem;
-    color: #FFFFFF;
+    color: var(--color-secondary);
 }
 
 /* Mockup Styles */
@@ -101,7 +119,7 @@
     grid-area: cta;
     align-self: center;
     justify-self: flex-start;
-    background-color: #FEE715;
+    background-color: var(--color-accent);
     color: #101820;
     text-decoration: none;
     padding: 1rem 2rem;
@@ -144,14 +162,14 @@
 }
 
 .degree-description {
-    color: #FFFFFF;
+    color: var(--color-secondary);
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 100;
     font-size: 2.5rem;
 }
 
 .certificate-description {
-    color: #FFFFFF;
+    color: var(--color-secondary);
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 100;
     font-size: 2.5rem;
@@ -193,19 +211,19 @@
 .exp-num {
     grid-area: exp-num;
     margin: 0;
-    color: #FFFFFF;
+    color: var(--color-secondary);
 }
 
 .exp-desc {
     grid-area: exp-desc;
-    color: #FFFFFF;
+    color: var(--color-secondary);
 }
 
 .whoami {
     max-width: 30rem;
     justify-self: flex-end;
     grid-area: whoami;
-    color: #FFFFFF;
+    color: var(--color-secondary);
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;

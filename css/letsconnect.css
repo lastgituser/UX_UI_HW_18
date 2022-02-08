@@ -1,4 +1,10 @@
 
+:root {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
 .letsconnect {
     margin: 2rem 4rem;
     display: flex;
@@ -8,7 +14,7 @@
 }
 
 .heading-letsconnect {
-    color: #FFFFFF;
+    color: var(--color-secondary);
 }
 
 .letsconnect-link {
@@ -30,7 +36,7 @@
 
 .letsconnect-title {
     margin: 0;
-    color: #FFFFFF;
+    color: var(--color-secondary);
     text-decoration: none;
 }
 

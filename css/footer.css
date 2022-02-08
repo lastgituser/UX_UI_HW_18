@@ -1,8 +1,14 @@
 
+:root {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
 footer {
     display: grid;
     grid-template-rows: auto auto;
-    background-color: #FFFFFF;
+    background-color: var(--color-secondary);
     width: 100vw;
     justify-items: center;
 }
@@ -17,7 +23,7 @@ footer {
 }
 
 .footer-heading {
-    color: #101820;
+    color: var(--color-primary);
     margin: 0;
 }
 
@@ -29,7 +35,7 @@ footer {
 
 .footer-link {
     text-decoration: none;
-    color: #101820;
+    color: var(--color-primary);
     margin: 1rem 0;
 }
 

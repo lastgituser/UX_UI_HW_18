@@ -42,7 +42,14 @@ p {
 }
 
 .belowthefold {
-    margin: 4rem auto;
+    padding: 4rem 0;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.belowthefold-container {
     display: flex;
     flex-direction: column;
     max-width: 100rem;

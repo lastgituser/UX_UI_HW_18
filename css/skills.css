@@ -1,6 +1,12 @@
 
+:root {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
 .heading-skills {
-    color: #FFFFFF;
+    color: var(--color-secondary);
     margin: 0 6rem;
 }
 
@@ -12,7 +18,7 @@
     grid-row-gap: 2rem;
     align-items: flex-start;
     justify-items: center;
-    color: #FFFFFF;
+    color: var(--color-secondary);
     margin: 2rem 4rem;
 }
 

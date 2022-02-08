@@ -1,6 +1,12 @@
 
+:root {
+    --color-primary: #101820;
+    --color-secondary: #FFFFFF;
+    --color-accent: #FEE715;
+}
+
 .heading-casestudies {
-    color: #FFFFFF;
+    color: var(--color-secondary);
     margin: 0 4rem;
 }
 
@@ -27,25 +33,25 @@
 }
 
 .case-study-skills {
-    color: #FFFFFF;
+    color: var(--color-secondary);
 }
 
 .case-study-button {
     padding: 0 2rem;
-    background-color: #FEE715;
-    color: #101820;
+    background-color: var(--color-accent);
+    color: var(--color-primary);
     border-radius: 1rem;
     margin-right: auto;
     margin-top: 2rem;
 }
 
 .case-study-title {
-    color: #FFFFFF;
+    color: var(--color-secondary);
     margin: 0;
 }
 
 .case-study-desc {
-    color: #FFFFFF;
+    color: var(--color-secondary);
 }
 
 @media only screen and (max-width: 1100px) {
